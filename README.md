@@ -23,4 +23,4 @@
 - data_mean_std : data with mean and standard deviation values with Activty and Subject columns
 - ## Final Data Set
 - grouped_data : grouped with Activty(1-6) and Subject (1-30) and then calculated mean for each measurements - after grouping.20. now the row count is : 6*30 = 180 and column count = 88(including : Activty and Subject)
-- Generate 'Tidy Dataset' that consists of the average (mean) of each variable for each subject and each activity. The result is shown in the file tidydata.txt.
+- Generate 'Tidy Dataset' that consists of the average (mean) of each variable for each subject and each activity. The result is shown in the file "tidydata.txt".
