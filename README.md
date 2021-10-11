@@ -1,6 +1,7 @@
 # Test-and-Train
-test and train data
+# test and train data
 column_names : Read the file "features.txt" it has all the 561 column names , column names are same for both train and test so single file can be used for both.
+
 test_x : Read the file "X_test.txt", this file has all the measurements (2947*561)
 test_y : Read the file "y_test.txt", this file has all the Activity numbers(1-6) (2947*1)
 sub_test : Read the file "subject_test.txt", this file has all the subjects number (2947*1)
