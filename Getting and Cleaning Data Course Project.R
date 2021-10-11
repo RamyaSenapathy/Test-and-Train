@@ -46,7 +46,8 @@ library(dplyr)
 # select is a column filter
 data_mean_std <- data_final  %>%  select(Activity,Subject, contains('mean'),contains('std')) 
 #grouping 6 activities *30 subjects and finding mean = 180 rows
-grouped_data <- data_mean_std  %>% group_by(Activity,Subject) %>% summarise(across(.groups=c("Activity","Subject"),.cols=is.numeric,.fns=mean))
+grouped_data <- data_mean_std  %>% group_by(Subject,Activity) %>% summarise(across(.groups=c("Activity","Subject"),.cols=is.numeric,.fns=mean))
+write.table(grouped_data, file=file.path("tidydata.txt"), row.names = FALSE, quote = FALSE)
 
 
 
